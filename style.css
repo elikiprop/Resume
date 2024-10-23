@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer is pushed to the bottom */
+}
+
+.header {
+    background-color: #4CAF50; /* A soothing green */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Center aligns header content */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Main heading size */
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.header nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.content {
+    padding: 20px;
+    flex: 1; /* Allows the content area to expand */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.content-box {
+    background-color: white; /* Background color of the box */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    max-width: 600px; /* Max width for larger screens */
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center align text in the box */
+}
+
+.content h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.content p, .content ul {
+    line-height: 1.6; /* Improved readability */
+    margin: 10px 0;
+}
+
+.content ul {
+    list-style-type: square; /* Square bullets for lists */
+    padding-left: 20px; /* Indentation for lists */
+}
+
+.footer {
+    background-color: #4CAF50; /* Same color as header for consistency */
+    color: white;
+    text-align: center; /* Center aligns footer text */
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em; /* Slightly smaller text for footer */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em; /* Reduce heading size on small screens */
+    }
+
+    .header nav ul li {
+        display: block; /* Stack nav items vertically on small screens */
+        margin: 5px 0; /* Spacing between stacked items */
+    }
+}
